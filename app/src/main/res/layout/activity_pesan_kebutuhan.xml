@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityPesanKebutuhan">
+
+    <TextView
+        android:id="@+id/textViewHeadDeskripsiKebutuhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Deskripsi :"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewJenisKebutuhan"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJenisKebutuhan" />
+
+    <TextView
+        android:id="@+id/textViewPesanKebutuhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        android:text="Pesan Kebutuhan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewPesanKebutuhan"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPesanKebutuhan"
+        app:srcCompat="@mipmap/ic_royalcanin_foreground" />
+
+    <TextView
+        android:id="@+id/textViewJenisKebutuhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Royal Canin"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPesanKebutuhan"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPesanKebutuhan" />
+
+    <TextView
+        android:id="@+id/textViewHargaKebutuhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="IDR 60 K"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewPesanKebutuhan"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPesanKebutuhan" />
+
+    <TextView
+        android:id="@+id/textViewDeskripsiKebutuhan"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Royal Canin merupakan kebutuhan makanan untuk kucing kesayangan anda yang dijual dengan harga Rp.60.000"
+        app:layout_constraintStart_toStartOf="@+id/textViewHeadDeskripsiKebutuhan"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeadDeskripsiKebutuhan" />
+
+    <TextView
+        android:id="@+id/textViewJumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Jumlah :"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewDeskripsiKebutuhan"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeskripsiKebutuhan" />
+
+    <EditText
+        android:id="@+id/editTextJumlah"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:drawableStart="@drawable/ic_shopping_bag_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Input jumlah"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJumlah" />
+
+    <Button
+        android:id="@+id/buttonPesanKebutuhan"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="Pesan"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editTextJumlah"
+        app:layout_constraintStart_toStartOf="@+id/editTextJumlah"
+        app:layout_constraintTop_toBottomOf="@+id/editTextJumlah" />
+</androidx.constraintlayout.widget.ConstraintLayout>

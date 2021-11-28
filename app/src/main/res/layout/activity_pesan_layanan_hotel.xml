@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityPesanLayananHotel">
+
+    <TextView
+        android:id="@+id/textViewHeadDeskripsiHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Deskripsi :"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewJenisHotel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJenisHotel" />
+
+    <TextView
+        android:id="@+id/textViewHargaHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="IDR 75 K / Malam"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewPesanLayananHotel"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPesanLayananHotel" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Pesan Layanan Hotel"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewPesanLayananHotel"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@mipmap/ic_pict4_foreground" />
+
+    <TextView
+        android:id="@+id/textViewJenisHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Silver Class"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPesanLayananHotel"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPesanLayananHotel" />
+
+    <TextView
+        android:id="@+id/textViewDeskripsiHotel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Silver class merupakan layanan hotel yang ditawarkan dengan harga Rp.75.000 per malamnya"
+        app:layout_constraintStart_toStartOf="@+id/textViewHeadDeskripsiHotel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeadDeskripsiHotel" />
+
+    <TextView
+        android:id="@+id/textViewTanggalHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Tanggal :"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewDeskripsiHotel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeskripsiHotel" />
+
+    <EditText
+        android:id="@+id/editTextTanggalHotel"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_input"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:drawableStart="@drawable/ic_calendar_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Input tanggal"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTanggalHotel" />
+
+    <TextView
+        android:id="@+id/textViewJumlahHari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Jumlah hari :"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editTextTanggalHotel"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTanggalHotel" />
+
+    <EditText
+        android:id="@+id/editTextJumlahHari"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:drawableStart="@drawable/ic_calendar_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Input jumlah hari"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTanggalHotel"
+        app:layout_constraintStart_toStartOf="@+id/editTextTanggalHotel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJumlahHari" />
+
+    <Button
+        android:id="@+id/buttonPesanHotel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="Pesan"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editTextJumlahHari"
+        app:layout_constraintStart_toStartOf="@+id/editTextJumlahHari"
+        app:layout_constraintTop_toBottomOf="@+id/editTextJumlahHari" />
+</androidx.constraintlayout.widget.ConstraintLayout>

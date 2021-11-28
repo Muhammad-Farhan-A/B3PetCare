@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityLayananPetHotel">
+
+    <TextView
+        android:id="@+id/textViewSilverClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Silver Class"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewHargaSilverClass"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPetHotel" />
+
+    <TextView
+        android:id="@+id/textViewPetHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        android:text="Pet Hotel"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewSilverClass"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@+id/textViewPetHotel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPetHotel"
+        app:srcCompat="@mipmap/ic_pict4_foreground" />
+
+    <TextView
+        android:id="@+id/textViewHargaSilverClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
+        android:text="IDR 75 K / Malam"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSilverClass" />
+
+    <Button
+        android:id="@+id/buttonSilverClass"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_button"
+        android:onClick="pindahPesanHotel"
+        android:text="Pesan"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textViewHargaSilverClass"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHargaSilverClass" />
+
+    <ImageView
+        android:id="@+id/imageViewGoldClass"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="35dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSilverClass"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSilverClass"
+        app:srcCompat="@mipmap/ic_pict5_foreground" />
+
+    <TextView
+        android:id="@+id/textViewGoldClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Gold Class"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/buttonSilverClass"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSilverClass" />
+
+    <TextView
+        android:id="@+id/textViewHargaGoldClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="IDR 125 K / Malam"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewGoldClass"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGoldClass" />
+
+    <Button
+        android:id="@+id/buttonGoldClass"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_button"
+        android:onClick="pindahPesanHotel"
+        android:text="Pesan"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textViewHargaGoldClass"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHargaGoldClass" />
+
+    <ImageView
+        android:id="@+id/imageViewPlatinumClass"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewGoldClass"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewGoldClass"
+        app:srcCompat="@mipmap/ic_pict6_foreground" />
+
+    <TextView
+        android:id="@+id/textViewPlatinumClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="PlatinumClass"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/buttonGoldClass"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGoldClass" />
+
+    <TextView
+        android:id="@+id/textViewHargaPlatinumClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="IDR 200 K / Malam"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewPlatinumClass"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPlatinumClass" />
+
+    <Button
+        android:id="@+id/buttonPlatinumClass"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_button"
+        android:onClick="pindahPesanHotel"
+        android:text="Pesan"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textViewHargaPlatinumClass"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHargaPlatinumClass" />
+</androidx.constraintlayout.widget.ConstraintLayout>

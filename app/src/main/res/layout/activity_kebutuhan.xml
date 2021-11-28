@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityKebutuhan">
+
+    <TextView
+        android:id="@+id/textViewKebutuhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        android:text="Kebutuhan PetCare"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewKebutuhanMakanan"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKebutuhan"
+        app:srcCompat="@mipmap/ic_pict6_foreground" />
+
+    <ImageView
+        android:id="@+id/imageViewKebutuhanMandi"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewKebutuhanMakanan"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageViewKebutuhanMakanan"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMakanan"
+        app:srcCompat="@mipmap/ic_pict9_foreground" />
+
+    <Button
+        android:id="@+id/buttonMakanan"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_button"
+        android:onClick="pindahListKebutuhan"
+        android:text="Makanan"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewKebutuhanMakanan"
+        app:layout_constraintStart_toStartOf="@+id/imageViewKebutuhanMakanan"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKebutuhanMakanan" />
+
+    <Button
+        android:id="@+id/buttonPerlengkapanMandi"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_button"
+        android:onClick="pindahListKebutuhan"
+        android:text="Perlengkapan Mandi"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewKebutuhanMandi"
+        app:layout_constraintStart_toStartOf="@+id/imageViewKebutuhanMandi"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKebutuhanMandi" />
+</androidx.constraintlayout.widget.ConstraintLayout>

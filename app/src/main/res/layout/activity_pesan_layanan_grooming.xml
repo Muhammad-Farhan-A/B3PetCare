@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityPesanLayananGrooming">
+
+    <TextView
+        android:id="@+id/textViewPesanLayananGrooming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="30dp"
+        android:text="Pesan Layanan Grooming"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewPesanLayananGrooming"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPesanLayananGrooming"
+        app:srcCompat="@mipmap/ic_pict9_foreground" />
+
+    <TextView
+        android:id="@+id/textViewJenisGrooming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Mandi Biasa"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPesanLayananGrooming"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPesanLayananGrooming" />
+
+    <TextView
+        android:id="@+id/textViewHargaGrooming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="IDR 50 K"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewPesanLayananGrooming"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPesanLayananGrooming" />
+
+    <TextView
+        android:id="@+id/textViewHeadDeskripsiGrooming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Deskripsi :"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewJenisGrooming"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJenisGrooming" />
+
+    <TextView
+        android:id="@+id/textViewDeskripsiGrooming"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Mandi biasa merupakan jenis grooming untuk hewan peliharaan dengan harga Rp.50.000"
+        app:layout_constraintStart_toStartOf="@+id/textViewHeadDeskripsiGrooming"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeadDeskripsiGrooming" />
+
+    <TextView
+        android:id="@+id/textViewTanggalGrooming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Tanggal :"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewDeskripsiGrooming"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeskripsiGrooming" />
+
+    <EditText
+        android:id="@+id/editTextTanggalGrooming"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_calendar_24"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="Input tanggal"
+        android:inputType="date"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTanggalGrooming" />
+
+    <TextView
+        android:id="@+id/textViewJamGrooming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Jam :"
+        android:textColor="#A35D47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editTextTanggalGrooming"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTanggalGrooming" />
+
+    <EditText
+        android:id="@+id/editTextJamGrooming"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_alarm_24"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="Input jam"
+        android:inputType="time"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTanggalGrooming"
+        app:layout_constraintStart_toStartOf="@+id/editTextTanggalGrooming"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJamGrooming" />
+
+    <Button
+        android:id="@+id/buttonPesanGrooming"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="Pesan"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editTextJamGrooming"
+        app:layout_constraintStart_toStartOf="@+id/editTextJamGrooming"
+        app:layout_constraintTop_toBottomOf="@+id/editTextJamGrooming" />
+</androidx.constraintlayout.widget.ConstraintLayout>
